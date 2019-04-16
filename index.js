@@ -7,12 +7,18 @@ button.addEventListener('click', func);
            var text = document.getElementById('greet');
         if (name.length > 2) {
             text.innerHTML = 'Hello test user!';
+            
         } else {
             
             text.innerHTML = 'Hello guest!';
         }
     }
    
+var reset = document.getElementById('reset');
+reset.addEventListener('click', func2);
 
+function func2() {
+    localStorage.removeItem('key');
+}
 
 
